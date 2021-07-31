@@ -42,7 +42,8 @@ body *{
 #left{
     width: 33%;
     display: flex;
-    background: url('./assets/upd_separated_png/willy_red.png') no-repeat center / contain;
+    background: url('./assets/upd_separated_png/willy_red.png') center 90px / 75% no-repeat,
+                url('./assets/upd_separated_png/273.png') center center / contain no-repeat;
 }
 #left img{
     width: 70px;
@@ -80,26 +81,27 @@ body *{
     list-style: none;
     width: 18%;
     margin: 0 1%;
-    background: url('./assets/upd_separated_png/11.png') no-repeat top left / 100% 100%;
+    background: url('./assets/upd_separated_png/27.png') no-repeat top left / 100% 100%;
 }
 /*  */
 #icons li .content{
-    font-family: 'Gagalin';
     color: #ef9d2d;
-    font-size: 40px;
+    font-size: 25px;
     background: url() no-repeat center / 60% !important;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
 }
 #icons li .content:after{
     content: "COMING SOON";
     height: 25px;
     position: absolute;
-    top: calc(100% + 10px);
-    font-size: 14px;
+    bottom: 6px;
+    font-size: 9px;
     padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('./assets/upd_separated_png/231.png') center center / 100% 100% no-repeat;
 }
 #icons li:nth-child(1) .content{
     background-image: url('./assets/upd_separated_png/255.png');
@@ -130,7 +132,7 @@ body *{
 }
 .resurs{
     width: 250px;
-    height: 90px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,18 +143,21 @@ body *{
     margin-right: 10px;
 }
 .power{
-    background: url('./assets/upd_separated_png/303.png') no-repeat left top / contain;
+    background: url('./assets/upd_separated_png/261.png') no-repeat 17px center / auto 50%,
+                url('./assets/upd_separated_png/222.png') no-repeat left center / auto 100%;
 }
 .money{
-    background: url('./assets/upd_separated_png/304.png') no-repeat left top / contain;
+    background: url('./assets/upd_separated_png/258.png') no-repeat 15px center / auto 50%,
+                url('./assets/upd_separated_png/222.png') no-repeat left center / auto 100%;
 }
 .resurs .nominal{
-    width: 55%;
+    width: 70%;
     margin-left: 30%;
+    padding: 11px 0;
     text-align: center;
-    padding: 3px;
     color: #ef9d2d;
-    background: url('./assets/upd_separated_png/307.png') no-repeat left top / 100% 100%;
+    font-size: 30px;
+    background: url('./assets/upd_separated_png/229.png') no-repeat left top / 100% 100%;
 }
 
 #timer{
