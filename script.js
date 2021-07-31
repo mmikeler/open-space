@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementById('timer'),
         document.getElementById('power'),
         document.getElementById('money'),
-        0.1, // Кол-во минут на таймере
+        1, // Кол-во минут на таймере
         10, // Добавляется валюты
         10, // Тратиться силы
     ]

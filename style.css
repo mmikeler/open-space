@@ -42,8 +42,7 @@ body *{
 #left{
     width: 33%;
     display: flex;
-    background: url('./assets/upd_separated_png/willy_red.png') center 90px / 75% no-repeat,
-                url('./assets/upd_separated_png/273.png') center center / contain no-repeat;
+    background: url('./assets/upd_separated_png/willy_red.png')no-repeat center / contain;
 }
 #left img{
     width: 70px;
@@ -169,6 +168,7 @@ body *{
     padding: 15px;
     color: #d5871d;
     text-align: center;
+    margin-top: 135px;
     background: url('./assets/upd_separated_png/229.png') no-repeat left top / 100% 100%;
 }
 #start{
