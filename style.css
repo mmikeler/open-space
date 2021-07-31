@@ -1,6 +1,10 @@
 @font-face {
     font-family: 'SaranaiGame';
-    src: url('./assets/SaranaiGame-Bold.ttf');
+    src: url('./assets/fonts/SaranaiGame-Bold.ttf');
+}
+@font-face {
+    font-family: 'Gagalin';
+    src: url('./assets/fonts/Gagalin-Regular.otf');
 }
 
 body *{
@@ -36,8 +40,9 @@ body *{
 
 /* LEFT */
 #left{
-    width: 23%;
+    width: 33%;
     display: flex;
+    background: url('./assets/upd_separated_png/willy_red.png') no-repeat center / contain;
 }
 #left img{
     width: 70px;
@@ -47,17 +52,24 @@ body *{
 
 /* MIDDLE */
 #middle{
-    width: 50%;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
 }
 #text{
     padding: 100px 30px 70px 30px;
     color: #fff;
     height: 75%;
     font-size: 20px;
+    font-family: 'Gagalin';
+    color: #d5871d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #icons{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     padding: 0;
     margin: 0;
@@ -107,7 +119,7 @@ body *{
 
 /* RIGHT */
 #right{
-    width: 23%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,9 +168,9 @@ body *{
 #start{
     cursor: pointer;
     width: 100%;
-    height: 60px;
+    height: 78px;
     font-size: 30px;
-    margin: 0 auto;
+    margin: 0 auto 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
