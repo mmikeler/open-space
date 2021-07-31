@@ -80,26 +80,26 @@ body *{
     list-style: none;
     width: 18%;
     margin: 0 1%;
-    background: url() no-repeat top left / 100% 100%;
-}
-#icons li:nth-child(1){
-    background-image: url('./assets/upd_separated_png/2.png');
-}
-#icons li:nth-child(2){
-    background-image: url('./assets/upd_separated_png/5.png');
-}
-#icons li:nth-child(3){
-    background-image: url('./assets/upd_separated_png/8.png');
-}
-#icons li:nth-child(4){
-    background-image: url('./assets/upd_separated_png/11.png');
-}
-#icons li:nth-child(5){
-    background-image: url('./assets/upd_separated_png/1.png');
+    background: url('./assets/upd_separated_png/11.png') no-repeat top left / 100% 100%;
 }
 /*  */
 #icons li .content{
-    background: url() no-repeat center / 60%;
+    font-family: 'Gagalin';
+    color: #ef9d2d;
+    font-size: 40px;
+    background: url() no-repeat center / 60% !important;
+}
+#icons li .content:after{
+    content: "COMING SOON";
+    height: 25px;
+    position: absolute;
+    top: calc(100% + 10px);
+    font-size: 14px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./assets/upd_separated_png/231.png') center center / 100% 100% no-repeat;
 }
 #icons li:nth-child(1) .content{
     background-image: url('./assets/upd_separated_png/255.png');
@@ -151,6 +151,7 @@ body *{
     margin-left: 30%;
     text-align: center;
     padding: 3px;
+    color: #ef9d2d;
     background: url('./assets/upd_separated_png/307.png') no-repeat left top / 100% 100%;
 }
 
