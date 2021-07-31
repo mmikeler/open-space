@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'SaranaiGame';
+    src: url('./assets/SaranaiGame-Bold.ttf');
+}
+
+body *{
+    box-sizing: border-box;
+    font-family: 'SaranaiGame', sans-serif;
+}
+#root{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: bisque;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: url('./assets/bg/bg.jpg') no-repeat center / cover;
+}
+#bord{
+    height: 600px;
+    width: 95%;
+    max-width: 1280px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 30px;
+}
+#left,#right,#middle{
+    /* border: 1px solid #ddd; */
+}
+
+/* LEFT */
+#left{
+    width: 23%;
+    display: flex;
+}
+#left img{
+    width: 70px;
+    display: block;
+    margin: auto;
+}
+
+/* MIDDLE */
+#middle{
+    width: 50%;
+}
+#text{
+    padding: 100px 30px 70px 30px;
+    color: #fff;
+    height: 75%;
+    font-size: 20px;
+}
+#icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+    height: 23%;
+}
+#icons li{
+    list-style: none;
+    width: 18%;
+    margin: 0 1%;
+    background: url() no-repeat top left / 100% 100%;
+}
+#icons li:nth-child(1){
+    background-image: url('./assets/upd_separated_png/2.png');
+}
+#icons li:nth-child(2){
+    background-image: url('./assets/upd_separated_png/5.png');
+}
+#icons li:nth-child(3){
+    background-image: url('./assets/upd_separated_png/8.png');
+}
+#icons li:nth-child(4){
+    background-image: url('./assets/upd_separated_png/11.png');
+}
+#icons li:nth-child(5){
+    background-image: url('./assets/upd_separated_png/1.png');
+}
+/*  */
+#icons li .content{
+    background: url() no-repeat center / 60%;
+}
+#icons li:nth-child(1) .content{
+    background-image: url('./assets/upd_separated_png/255.png');
+}
+#icons li:nth-child(2) .content{
+    background-image: url('./assets/upd_separated_png/256.png');
+}
+#icons li:nth-child(3) .content{
+    background-image: url('./assets/upd_separated_png/257.png');
+}
+#icons li:nth-child(4) .content{
+    background-image: url('./assets/upd_separated_png/258.png');
+}
+#icons li:nth-child(5) .content{
+    background-image: url('./assets/upd_separated_png/259.png');
+}
+
+/* RIGHT */
+#right{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#resources{
+    width: 100%;
+}
+.resurs{
+    width: 250px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.resurs .square{
+    width: 30%;
+    margin-right: 10px;
+}
+.power{
+    background: url('./assets/upd_separated_png/303.png') no-repeat left top / contain;
+}
+.money{
+    background: url('./assets/upd_separated_png/304.png') no-repeat left top / contain;
+}
+.resurs .nominal{
+    width: 55%;
+    margin-left: 30%;
+    text-align: center;
+    padding: 3px;
+    background: url('./assets/upd_separated_png/307.png') no-repeat left top / 100% 100%;
+}
+
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+    padding: 15px;
+    color: #d5871d;
+    text-align: center;
+    background: url('./assets/upd_separated_png/229.png') no-repeat left top / 100% 100%;
+}
+#start{
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: url('./assets/upd_separated_png/229.png') no-repeat left top / 100% 100%;
+}
+
+/* UTILITES */
+.field{
+    background: url('./assets/upd_separated_png/14.png') no-repeat left top / 100% 100%;
+}
+.square {
+    position: relative;
+    display: block;
+} 
+.square:after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    border-radius: 50%;
+    background: url('./assets/upd_separated_png/220.png') no-repeat left top / 100% 100%;
+}
+
+[animate=spin]{
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{}
+    100%{transform: rotate(360deg);}
+}

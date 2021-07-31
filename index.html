@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Space Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/font" href="./assets/SaranaiGame-Bold.ttf">
+</head>
+<body>
+    <div id="root">
+        <div id="bord">
+            <div id="left" class="field">
+                <img animate="spin" src="./assets/upd_separated_png/106.png" alt="" />
+            </div>
+            <div id="middle" >
+                <div id="text" class="field">На встречу приключениям!</div>
+                <ul id="icons">
+                    <li class="square">
+                        <div class="content"></div>
+                    </li>
+                    <li class="square">
+                        <div class="content"></div>
+                    </li>
+                    <li class="square">
+                        <div class="content"></div>
+                    </li>
+                    <li class="square">
+                        <div class="content"></div>
+                    </li>
+                    <li class="square">
+                        <div class="content"></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <div id="resources">
+                    <div class="resurs power">
+                        <div id="power" class="nominal">100</div>
+                    </div>
+                    <div class="resurs money">
+                        <div id="money" class="nominal">10</div>
+                    </div>
+                </div>
+                <div id="timer">0:00</div>
+                <div id="start">START</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
