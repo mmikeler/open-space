@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementById('timer'),
         document.getElementById('power'),
         document.getElementById('money'),
-        0.5, // Кол-во минут на таймере
-        1, // Добавляется валюты
+        0.1, // Кол-во минут на таймере
+        10, // Добавляется валюты
         10, // Тратиться силы
     ]
 
@@ -49,7 +49,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function addMoney(){
         let prevMoney = money.innerText;
-        money.innerText = +prevMoney + addMoneyCount;
+        let nextMoney = +prevMoney + addMoneyCount;
+
+        if(nextMoney < 100 && nextMoney >= 10)
+            nextMoney = '0' + nextMoney
+
+        money.innerText = nextMoney;
         time.innerText = '0:00'
     }
 
